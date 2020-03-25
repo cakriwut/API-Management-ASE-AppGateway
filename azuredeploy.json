@@ -81,7 +81,7 @@
       "name": "[variables('ASE-APIM-VNET-Name')]",
       "type": "Microsoft.Network/virtualNetworks",
       "apiVersion": "2018-10-01",
-      "location": "West US",
+      "location": "[resourceGroup().location]",
       "properties": {
         "addressSpace": {
           "addressPrefixes": [
